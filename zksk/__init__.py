@@ -1,4 +1,4 @@
-__version__ = "0.0.3"
+__version__ = "0.0.31"
 __title__ = "zksk"
 __author__ = "Wouter Lueks, Bogdan Kulynych, Jules Fasquelle, Simon Le Bail-Collet"
 __email__ = "wouter.lueks@epfl.ch"

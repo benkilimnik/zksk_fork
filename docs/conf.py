@@ -129,4 +129,4 @@ texinfo_documents = [
      'Miscellaneous'),
 ]
 
-autodoc_mock_imports = ['petlib', 'bplib', 'msgpack']
+autodoc_mock_imports = ['petlib-fork', 'bplib-fork', 'msgpack']

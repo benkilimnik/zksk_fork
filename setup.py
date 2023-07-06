@@ -5,11 +5,12 @@ import re
 from setuptools import setup, find_packages
 
 
-INSTALL_REQUIRES = ["petlib", "bplib"]
+INSTALL_REQUIRES = ["petlib-fork", "bplib-fork"]
 SETUP_REQUIRES = ["pytest-runner"]
 TEST_REQUIRES = ["pytest"]
 DOC_REQUIRES = ["sphinx", "sphinx_rtd_theme", "m2r"]
-DEV_REQUIRES = TEST_REQUIRES + DOC_REQUIRES + ["black", "pre-commit", "pytest-cov"]
+DEV_REQUIRES = TEST_REQUIRES + DOC_REQUIRES + \
+    ["black", "pre-commit", "pytest-cov"]
 
 
 here = os.path.abspath(os.path.dirname(__file__))
@@ -24,7 +25,7 @@ with open(os.path.join(here, "zksk/__init__.py")) as f:
 
 
 setup(
-    name=__title__,
+    name="zksk-fork",
     version=__version__,
     description=__description__,
     long_description=long_description,
@@ -36,7 +37,8 @@ setup(
     install_requires=INSTALL_REQUIRES,
     setup_requires=SETUP_REQUIRES,
     tests_require=TEST_REQUIRES,
-    extras_require={"dev": DEV_REQUIRES, "test": TEST_REQUIRES, "doc": DOC_REQUIRES,},
+    extras_require={"dev": DEV_REQUIRES,
+                    "test": TEST_REQUIRES, "doc": DOC_REQUIRES, },
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
